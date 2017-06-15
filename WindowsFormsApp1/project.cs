@@ -95,7 +95,7 @@ namespace WindowsFormsApp1
             parameterChangerGrid.Rows[1].Cells[0].Value = "<データベース名>";
             parameterChangerGrid.Rows[1].Cells[1].Value = "Database01";
 
-            
+            //wa
         }
 
         
