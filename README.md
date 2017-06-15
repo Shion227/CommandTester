@@ -1,5 +1,7 @@
 # CommandTester
-Test the input command and replace the placeholder into the variables
+Developed by Shion Kubota, a summer intern at Microsoft Japan in 2017
+to support the work of Microsoft CSS Exchange/Outlook team.
+
 
 Functionality:
   Check the validity of the input command, and run it. 
