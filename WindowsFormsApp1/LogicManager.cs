@@ -46,8 +46,8 @@ namespace WindowsFormsApp1
         /**
          * find the default user from properties
          */
-        private void defaultUserFinder()
-        {
+        private void defaultUserFinder(){
+
             defaultUserName = string.Empty; //clear up the info
             defaultUserPass = string.Empty;
             
@@ -246,8 +246,8 @@ namespace WindowsFormsApp1
         /**
          * disposer
          */
-        public void Dispose()
-        {
+        public void Dispose(){
+
             if (runSpace != null){
                 runSpace.Dispose(); //dispose runspace
             }

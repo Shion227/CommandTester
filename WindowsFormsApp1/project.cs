@@ -88,8 +88,8 @@ namespace WindowsFormsApp1
         /**
          * Set the default of the parameterChangeGrid
          */
-        private void parameterDefaultSet()
-        {
+        private void parameterDefaultSet(){
+
             //create 3 rows as defaulot for parameter changer
             for (int i=0; i<2; i++){
                 DataGridViewRow row = (DataGridViewRow)parameterChangerGrid.Rows[0].Clone();
@@ -113,7 +113,7 @@ namespace WindowsFormsApp1
         /**
          * when run button is clicked,  kick off the run
          */
-        private void runButton_Click(object sender, EventArgs e) {
+        private void runButton_Click(object sender, EventArgs e){
             
             this.Cursor = Cursors.AppStarting; //change the cursor
             

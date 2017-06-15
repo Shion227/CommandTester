@@ -133,8 +133,8 @@ namespace WindowsFormsApp1
         /**
          * add up error msg and result msg for each line
          */
-        private string errorGetter(PSObject item)
-        {
+        private string errorGetter(PSObject item){
+
             string errormsg = string.Empty;
 
             //If something is in Error property
@@ -214,8 +214,8 @@ namespace WindowsFormsApp1
         /**
          * Disposer
          */
-        public void Dispose()
-        {
+        public void Dispose(){
+
             if (powerShell != null){
                 powerShell.Dispose(); //dispose powershell
             }

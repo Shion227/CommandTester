@@ -24,8 +24,8 @@ namespace WindowsFormsApp1
             InitializeComponent(); //initialize component
         }
 
-        private void InitializeComponent()
-        {
+        private void InitializeComponent(){
+
             this.connectionButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();

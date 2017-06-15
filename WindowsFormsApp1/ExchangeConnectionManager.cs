@@ -68,8 +68,8 @@ namespace WindowsFormsApp1
         /**
          * disposer
          */
-        public void Dispose()
-        {
+        public void Dispose(){
+
             if (ps != null){
                 ps.Dispose(); //dispose powershell
             }

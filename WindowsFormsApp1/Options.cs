@@ -11,8 +11,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Options : Form
-    {
+    public partial class Options : Form{
         
         private ProjectGUI project;//the project object
         public List<string> users;//get the list of credentials with users and pass
@@ -101,7 +100,7 @@ namespace WindowsFormsApp1
             string deletion = users[index]; //and remove it from userCredentials, and users List
 
             //make sure the default user is not removed
-            if (!Properties.Settings.Default.defaultCredential.Equals(deletion)) {
+            if (!Properties.Settings.Default.defaultCredential.Equals(deletion)){
                 users.Remove(deletion);
                 Properties.Settings.Default.userCredentials.Remove(deletion);
                 Properties.Settings.Default.Save();
