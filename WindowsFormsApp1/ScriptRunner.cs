@@ -114,7 +114,8 @@ namespace WindowsFormsApp1
 
             string errorVal;
             string returnVal;
-            
+            summary = "no error";
+
             foreach (var item in result){
                 
                 errorVal = errorGetter(item);//get both error and result msg
@@ -136,6 +137,7 @@ namespace WindowsFormsApp1
         private string errorGetter(PSObject item){
 
             string errormsg = string.Empty;
+            
 
             //If something is in Error property
             if (item.Properties["Error"].Value != null){
@@ -146,7 +148,7 @@ namespace WindowsFormsApp1
 
                     errormsg = Environment.NewLine + "Error below occurred:"; //write out all the errors
                     
-                    summary = "There is an error in"; //maker summarized ver.
+                    summary = "ERROR see the detail"; //maker summarized ver.
 
                     
                     foreach (var i in errors){

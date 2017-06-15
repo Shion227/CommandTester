@@ -205,7 +205,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(76, 23);
+            this.label2.Location = new System.Drawing.Point(53, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(160, 21);
             this.label2.TabIndex = 37;
@@ -215,7 +215,7 @@
             // 
             this.defaultUserLabel.AutoSize = true;
             this.defaultUserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.defaultUserLabel.Location = new System.Drawing.Point(242, 24);
+            this.defaultUserLabel.Location = new System.Drawing.Point(219, 24);
             this.defaultUserLabel.Name = "defaultUserLabel";
             this.defaultUserLabel.Size = new System.Drawing.Size(111, 20);
             this.defaultUserLabel.TabIndex = 38;
@@ -225,7 +225,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(76, 59);
+            this.label3.Location = new System.Drawing.Point(53, 59);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 21);
             this.label3.TabIndex = 39;
@@ -235,7 +235,7 @@
             // 
             this.statusLabel.AutoSize = true;
             this.statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusLabel.Location = new System.Drawing.Point(242, 60);
+            this.statusLabel.Location = new System.Drawing.Point(219, 60);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(111, 20);
             this.statusLabel.TabIndex = 40;

@@ -111,7 +111,7 @@ namespace WindowsFormsApp1
                     
                     MessageBox.Show("Couldn't load  Exchange" + Environment.NewLine + "Error below occured" + Environment.NewLine + errormsg); //error msg in msgBox
                     
-                    statusLabel = "Connection failed. Check the default credential and reconnect again."; //change the status
+                    statusLabel = "Connection failed. Check default credential from settings and reconnect."; //change the status
                 }
             }
         }
