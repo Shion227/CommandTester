@@ -36,12 +36,12 @@
             this.addPassBox = new System.Windows.Forms.TextBox();
             this.addUserBox = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.editButtpm = new System.Windows.Forms.Button();
             this.defaultUserLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.deleteButton = new System.Windows.Forms.Button();
             this.defaultButton = new System.Windows.Forms.Button();
             this.userSelection = new System.Windows.Forms.ListBox();
-            this.editButtpm = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -104,6 +104,7 @@
             // 
             this.addPassBox.Location = new System.Drawing.Point(141, 82);
             this.addPassBox.Name = "addPassBox";
+            this.addPassBox.PasswordChar = '*';
             this.addPassBox.Size = new System.Drawing.Size(178, 20);
             this.addPassBox.TabIndex = 1;
             // 
@@ -129,6 +130,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Manage Users";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // editButtpm
+            // 
+            this.editButtpm.Location = new System.Drawing.Point(274, 118);
+            this.editButtpm.Name = "editButtpm";
+            this.editButtpm.Size = new System.Drawing.Size(115, 23);
+            this.editButtpm.TabIndex = 5;
+            this.editButtpm.Text = "Edit selected";
+            this.editButtpm.UseVisualStyleBackColor = true;
+            this.editButtpm.Click += new System.EventHandler(this.editButtpm_Click);
             // 
             // defaultUserLabel
             // 
@@ -175,16 +186,6 @@
             this.userSelection.Name = "userSelection";
             this.userSelection.Size = new System.Drawing.Size(382, 108);
             this.userSelection.TabIndex = 0;
-            // 
-            // editButtpm
-            // 
-            this.editButtpm.Location = new System.Drawing.Point(274, 118);
-            this.editButtpm.Name = "editButtpm";
-            this.editButtpm.Size = new System.Drawing.Size(115, 23);
-            this.editButtpm.TabIndex = 5;
-            this.editButtpm.Text = "Edit selected";
-            this.editButtpm.UseVisualStyleBackColor = true;
-            this.editButtpm.Click += new System.EventHandler(this.editButtpm_Click);
             // 
             // Options
             // 

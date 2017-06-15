@@ -46,6 +46,7 @@
             // 
             this.newPassword.Location = new System.Drawing.Point(127, 56);
             this.newPassword.Name = "newPassword";
+            this.newPassword.PasswordChar = '*';
             this.newPassword.Size = new System.Drawing.Size(217, 20);
             this.newPassword.TabIndex = 1;
             // 
@@ -79,6 +80,7 @@
             // 
             // CredentialEditor
             // 
+            this.AcceptButton = this.editButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 144);
