@@ -26,6 +26,9 @@ namespace WindowsFormsApp1
 
 
 
+        /**
+         * Constructor
+         */
         public ScriptRunner(PowerShell ps, Runspace rs){
 
             powerShell = ps;//set ps and rs first
@@ -33,6 +36,9 @@ namespace WindowsFormsApp1
         }
 
 
+        /**
+         * Check whether the command has whatIf property
+         */
         public string whatIfChecker(string text){
             
             Regex regex = new Regex(@"\w+-\w+");//create the pattern of the command which is Word-Word
@@ -59,7 +65,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * run command given
+         */
         public string commandRunner(string text){
             
             Collection<PSObject> runResult;//collection of the run results
@@ -99,8 +107,9 @@ namespace WindowsFormsApp1
         }
 
 
-
-        //add up error msg and result msg for each line
+        /**
+         * add up result msg and error msg for each line
+         */
         private string messageGetter(Collection<PSObject> result, string command, string ans){
 
             string errorVal;
@@ -120,7 +129,10 @@ namespace WindowsFormsApp1
 
 
 
-        //return error msg
+
+        /**
+         * add up error msg and result msg for each line
+         */
         private string errorGetter(PSObject item)
         {
             string errormsg = string.Empty;
@@ -159,7 +171,9 @@ namespace WindowsFormsApp1
         }
 
 
-        
+        /**
+         * add up result msg 
+         */
         private string returnGetter(PSObject item){
 
             string resultmsg = string.Empty;
@@ -197,7 +211,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * Disposer
+         */
         public void Dispose()
         {
             if (powerShell != null){

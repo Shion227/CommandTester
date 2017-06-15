@@ -98,6 +98,9 @@ namespace WindowsFormsApp1
         }
 
         
+        /**
+         * when button clicked, make the new connection
+         */
         private void connectionButton_Click(object sender, EventArgs e){
              
             connectionButton.Text = "Disconnecting currnet session"; //show the status in button

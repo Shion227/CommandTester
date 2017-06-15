@@ -17,6 +17,9 @@ namespace WindowsFormsApp1
         private string original;
 
 
+        /**
+         * Constructor
+         */
         public CredentialEditor(Options o,string input){
 
             InitializeComponent(); //initialize component
@@ -26,7 +29,10 @@ namespace WindowsFormsApp1
         }
         
 
-
+        /**
+         * confirm the info typed in as 
+         * the new vwesion of credential
+         */
         private void editButton_Click(object sender, EventArgs e){
 
             //get new pass and user
@@ -38,7 +44,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * And set the value as new value when esitButton clicked
+         */
         private void credentialModifier(){
             string[] info = original.Split(':');
 

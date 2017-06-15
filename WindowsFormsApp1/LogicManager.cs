@@ -33,7 +33,9 @@ namespace WindowsFormsApp1
         public string statusLabel=string.Empty; //conection status
 
 
-
+        /**
+         * Constructir
+         */
         public LogicManager(){
 
             statusLabel = "Connecting...";
@@ -41,7 +43,9 @@ namespace WindowsFormsApp1
 
 
 
-
+        /**
+         * find the default user from properties
+         */
         private void defaultUserFinder()
         {
             defaultUserName = string.Empty; //clear up the info
@@ -62,7 +66,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * invoke the connection 
+         */
         public void connectInvoker(string user, string pass){
 
             RunspaceConfiguration myConfig = setUpper();
@@ -112,6 +118,9 @@ namespace WindowsFormsApp1
 
 
         
+        /**
+         * set up the configuration and script
+         */
         private RunspaceConfiguration setUpper(){
             
             RunspaceConfiguration rsconf = RunspaceConfiguration.Create(); //runconfig
@@ -135,7 +144,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * setup the runspace and powershell
+         */
         private void setUpper2(RunspaceConfiguration config){
             
             runSpace = RunspaceFactory.CreateRunspace(config); //create runSpace
@@ -145,21 +156,27 @@ namespace WindowsFormsApp1
         }
         
 
-
+        /**
+         * run commands
+         */
         public string commandRun(string texts){
 
             return controller.commandRunner(texts); //run commands using controller
         }
 
 
-
+        /**
+         * get summary result message
+         */
         public string summaryMsg(){
 
             return controller.summary; //get summary msg
         }
 
 
-
+        /**
+         * apply the whatIf checjer and add -whatIf if needed
+         */
         public string whatIfModifier(string texts){
 
             if ((controller != null) && (texts != null))
@@ -175,7 +192,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * disconnect the exchange connection 
+         */
         public void disconnector(){
 
             if (connectionManager != null){
@@ -186,7 +205,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * return the default user
+         */
         public string getUser(){
 
             defaultUserFinder(); //go over the properties 
@@ -203,7 +224,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * return the default password
+         */
         public string getPass(){
 
             defaultUserFinder();//go over the properties 
@@ -220,7 +243,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * disposer
+         */
         public void Dispose()
         {
             if (runSpace != null){

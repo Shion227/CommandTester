@@ -21,14 +21,18 @@ namespace WindowsFormsApp1
         public LogicManager logic = new LogicManager(); //logic behind this entire app system
 
         
-
+        /**
+         * Constructor
+         */
         public ProjectGUI(){
 
             InitializeComponent(); //initialize GUI component
         }
 
 
-
+        /**
+         * Load the GUI
+         */
         private void project_Load(object sender, EventArgs e){
             
         }
@@ -41,7 +45,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * start setting them up
+         */
         public void starter(){ //kick in
 
             this.Cursor = Cursors.AppStarting; //change the cursor
@@ -69,6 +75,9 @@ namespace WindowsFormsApp1
 
 
         
+        /**
+         * change the label depends for default credential and connection status
+         */
         public void labelChanger(){
 
             statusLabel.Text = logic.statusLabel; //change the label of connection status
@@ -76,7 +85,9 @@ namespace WindowsFormsApp1
         }
 
 
-        
+        /**
+         * Set the default of the parameterChangeGrid
+         */
         private void parameterDefaultSet()
         {
             //create 3 rows as defaulot for parameter changer
@@ -99,6 +110,9 @@ namespace WindowsFormsApp1
 
         
         
+        /**
+         * when run button is clicked,  kick off the run
+         */
         private void runButton_Click(object sender, EventArgs e) {
             
             this.Cursor = Cursors.AppStarting; //change the cursor
@@ -118,6 +132,9 @@ namespace WindowsFormsApp1
 
 
 
+        /**
+         * check the placeholder and run the commands
+         */
         private void placeHolderCheckAndRun(string text){
 
             Regex regex = new Regex(@"\<\w+\>"); 
@@ -149,6 +166,9 @@ namespace WindowsFormsApp1
 
 
 
+        /**
+         * change the parameter accordingly to the parameterChangerGrid
+         */
         private string parameterChanger(string text){
 
             string input =text; //temporary reference to the input
@@ -193,6 +213,9 @@ namespace WindowsFormsApp1
         
 
         
+        /**
+         * set the short cut for select all
+         */
         private void copyPasteBox_KeyDown(object sender, KeyEventArgs e){
             
             if (e.KeyCode == Keys.A && e.Modifiers == Keys.Control){//check whether it is Ctrl + A
@@ -200,16 +223,20 @@ namespace WindowsFormsApp1
                 copyPasteBox.SelectAll(); //select all
             }
         }
-        
 
-        
+
+        /**
+         * set the short cut for select all
+         */
         private void inputBox_MouseDoubleClick(object sender, MouseEventArgs e){
             
             inputBox.SelectAll(); //double click and select all
         }
 
-        
 
+        /**
+         * invoke the temporary credential popup
+         */
         private void newConnection_Click(object sender, EventArgs e){
 
             DialogueBox subForm = new DialogueBox(this); //create the popup
@@ -218,7 +245,9 @@ namespace WindowsFormsApp1
         }
 
 
-        
+        /**
+         * invoke the credential setting popup
+         */
         private void optionButton_Click(object sender, EventArgs e){
 
             Options option = new Options(this); //create pop up
@@ -226,8 +255,10 @@ namespace WindowsFormsApp1
             labelChanger(); //change label
         }
 
-        
 
+        /**
+         * invoke the reconnection with the default credential
+         */
         private void reconnectButton_Click(object sender, EventArgs e){
 
             logic.disconnector(); //disconnect first
@@ -241,8 +272,10 @@ namespace WindowsFormsApp1
             this.Cursor = Cursors.Default; //change the cursor
         }
 
-        
 
+        /**
+         * invoke the reset of the all settings
+         */
         private void button1_Click(object sender, EventArgs e){
 
             logic.disconnector(); //disconnect 
@@ -252,7 +285,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * invoke the disconnection of the current session
+         */
         private void project_FormClosed(object sender, FormClosedEventArgs e){
 
             logic.disconnector();//disconnect

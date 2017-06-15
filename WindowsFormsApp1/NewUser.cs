@@ -15,16 +15,28 @@ namespace WindowsFormsApp1
         public ProjectGUI mainProject;
         private bool clicked = false;
         
+
+        /**
+         * constructor
+         */
         public NewUser(ProjectGUI project){
 
             InitializeComponent(); //initialize component
             mainProject = project; //get tyhe main GUI project
         }
 
+        
+        /**
+         * load GUI
+         */
         public void NewUser_Load(object sender, EventArgs e){ //load
 
         }
 
+
+        /**
+         * register a new user
+         */
         private void registerButton_Click(object sender, EventArgs e){
 
             if ((userBox.Text == null) || (passBox.Text == null))
@@ -48,6 +60,10 @@ namespace WindowsFormsApp1
             }
         }
 
+
+        /**
+         * prevent user from closing the form with no input
+         */
         private void NewUser_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (!clicked)

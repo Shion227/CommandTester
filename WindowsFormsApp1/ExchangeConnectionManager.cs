@@ -17,6 +17,10 @@ namespace WindowsFormsApp1
         private PowerShell ps;
         private Runspace rs;
 
+
+        /**
+         * Constructor
+         */
         public ExchangeConnectionManager(PowerShell powerShell, Runspace runSpace){
 
             ps = powerShell;//set and get value
@@ -24,7 +28,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * make the connection
+         */
         public Collection<PSObject> connector(string user, string pass){
 
             PSCommand create_sess = new PSCommand();　//new command
@@ -41,7 +47,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * disconnect the current session
+         */
         public Collection<PSObject> disconnector(PSSession session){
             
             PSCommand disconnect_sess = new PSCommand();//another PSCommand 
@@ -57,7 +65,9 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /**
+         * disposer
+         */
         public void Dispose()
         {
             if (ps != null){

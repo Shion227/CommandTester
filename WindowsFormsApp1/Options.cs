@@ -17,6 +17,10 @@ namespace WindowsFormsApp1
         private ProjectGUI project;//the project object
         public List<string> users;//get the list of credentials with users and pass
 
+
+        /**
+         * Constructor
+         */
         public Options(ProjectGUI project){
             
             this.project = project;//setup
@@ -27,6 +31,9 @@ namespace WindowsFormsApp1
 
 
         
+        /**
+         * when the button is clicked, add new credential
+         */
         private void addButton_Click(object sender, EventArgs e){
             
             Properties.Settings.Default.userCredentials.Add(addUserBox.Text + ":" + addPassBox.Text);
@@ -41,6 +48,9 @@ namespace WindowsFormsApp1
 
 
 
+        /**
+         * update the grid that shows the credentials
+         */
         public void selectionCreater(){
             
             users = new List<string>();//initiate string List, users 
@@ -64,6 +74,9 @@ namespace WindowsFormsApp1
 
 
        
+        /**
+         * when clicked, set the selected as default
+         */
         private void defaultButton_Click(object sender, EventArgs e){
             
             int index = userSelection.SelectedIndex;
@@ -79,7 +92,9 @@ namespace WindowsFormsApp1
         }
 
         
-
+        /**
+         * when button clicked, the selected credential will be deleted
+         */
         private void deleteButton_Click(object sender, EventArgs e) {
 
             int index = userSelection.SelectedIndex;//get the corresponding user:pass from users List,
@@ -104,6 +119,9 @@ namespace WindowsFormsApp1
 
 
 
+        /**
+         * when cluicked, allow user to edit the info of selected credential
+         */
         private void editButtpm_Click(object sender, EventArgs e){
 
             int index = userSelection.SelectedIndex;//get the corresponding user:pass from users List,
