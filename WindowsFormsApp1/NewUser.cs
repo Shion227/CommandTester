@@ -51,10 +51,10 @@ namespace WindowsFormsApp1
                 Properties.Settings.Default.Save();//save the properties
 
                 MessageBox.Show("New default credential has been set. Now we will start connecting to Exchange with this defaulot credential."); //show msgbox
-                this.Close();
 
                 clicked = true;
 
+                this.Close();
                 mainProject.starter(); //start over
             }
         }
