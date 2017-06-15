@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+* Created by Shion Kubota on 6/16/2017
+* 
+* Class that deals with GUI part of the main project
+*/
+
+using System;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Linq;
@@ -6,12 +12,7 @@ using System.Linq;
 
 namespace WindowsFormsApp1
 {
-
-    /**
-     * Created by Shion Kubota on 6/16/2017
-     * 
-     * Class that deals with GUI part of the main project
-     */
+    
     public partial class ProjectGUI : Form{
         
         private string texts; //the input command line

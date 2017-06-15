@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/**
+ * Created by Shion Kuboat on 6/15/2017
+ * 
+ * Class for credential settings
+ */
+
+using System;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -25,6 +24,8 @@ namespace WindowsFormsApp1
             option = o; //set the values
             original = input;
         }
+        
+
 
         private void editButton_Click(object sender, EventArgs e){
 
@@ -35,6 +36,8 @@ namespace WindowsFormsApp1
             //chnage the properties default
             credentialModifier();
         }
+
+
 
         private void credentialModifier(){
             string[] info = original.Split(':');

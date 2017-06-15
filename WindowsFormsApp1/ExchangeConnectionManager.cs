@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Created by Shion Kuboa on 6/15/2017
+ * 
+ * Class for managing the connection with Exchange
+ */
+
+using System;
 using System.Collections.ObjectModel;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;

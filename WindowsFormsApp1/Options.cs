@@ -1,4 +1,11 @@
-﻿using System;
+﻿/**
+ * Created by Shion Kubota on 6/15/2017
+ * 
+ * Class for managing the credential options
+ * It deals mostly with setting the default/ editting the credential info
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 

@@ -1,4 +1,11 @@
-﻿using System;
+﻿/**
+* Created by Shion Kubota on 6/15/2017
+* 
+* 
+* Class that manages the logic and algorithm of the program
+*/
+     
+using System;
 using System.Collections;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
@@ -9,6 +16,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+
+    
+     
     public class LogicManager : IDisposable
     {
         
@@ -16,7 +26,7 @@ namespace WindowsFormsApp1
         private Runspace runSpace; //runspace
         private PowerShell powerShell; //powershell
         private ExchangeConnectionManager connectionManager; //connectionManager
-        private ProjectController controller; //controller
+        private ScriptRunner controller; //controller
         private string defaultUserName; //default user name
         private string defaultUserPass; //default user password
 
@@ -62,7 +72,7 @@ namespace WindowsFormsApp1
 
             Collection<PSObject> result = connectionManager.connector(user, pass);//get the result of the invoke
 
-            controller = new ProjectController(powerShell, runSpace); //declare the controller
+            controller = new ScriptRunner(powerShell, runSpace); //declare the controller
             
 
             if (result == null){ //null catch

@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Created by Shion Kubota on 6/15/2017
+ * 
+ * Class for setting up the temporary credential
+ */
+
+using System;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1

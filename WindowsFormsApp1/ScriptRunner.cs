@@ -1,4 +1,10 @@
-﻿using System;
+﻿/**
+ * Created by Shion Kubota on 6/15/2017
+ * 
+ * Class for running the Script
+ */
+
+using System;
 using System.Linq;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;
@@ -10,7 +16,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public class ProjectController : IDisposable
+    public class ScriptRunner : IDisposable
     {
 
         private PowerShell powerShell;
@@ -20,7 +26,7 @@ namespace WindowsFormsApp1
 
 
 
-        public ProjectController(PowerShell ps, Runspace rs){
+        public ScriptRunner(PowerShell ps, Runspace rs){
 
             powerShell = ps;//set ps and rs first
             runSpace = rs;

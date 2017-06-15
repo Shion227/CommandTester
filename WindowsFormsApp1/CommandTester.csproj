@@ -58,12 +58,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ExchangeConnectionManager.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="LogicManager.cs" />
     <Compile Include="NewUser.cs">
       <SubType>Form</SubType>
@@ -84,16 +78,13 @@
     <Compile Include="project.Designer.cs">
       <DependentUpon>project.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProjectController.cs" />
+    <Compile Include="ScriptRunner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CredentialEditor.resx">
       <DependentUpon>CredentialEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DialogueBox.resx">
       <DependentUpon>DialogueBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewUser.resx">
       <DependentUpon>NewUser.cs</DependentUpon>

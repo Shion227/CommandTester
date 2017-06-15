@@ -1,5 +1,11 @@
-﻿using System;
-using System.Diagnostics;
+﻿/**
+ * 
+ * Created by Shion Kubota on 6/15/2017
+ * 
+ * Main kick in class
+ */
+
+using System;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1

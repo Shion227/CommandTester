@@ -1,4 +1,11 @@
-﻿using System;
+﻿/**
+ * Created by Shion Kubota on 06/15/2017
+ * 
+ * Class for the popup shows up at the very first time.
+ * set default credential
+ */
+
+using System;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
