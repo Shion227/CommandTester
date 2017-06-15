@@ -19,5 +19,5 @@ Warning:
       Set-Mailbox user02
       Set-Mailbox user01            
   If the user needs to check those lines as an input, the input has to be separated by line.
-  Placeholder has to be expressed in such a way that <WORD>. No ZENKAKU<> will be deteected.
+  Placeholder has to be expressed in such a way that <WORD>. No ZENKAKU<> will be detected.
   
