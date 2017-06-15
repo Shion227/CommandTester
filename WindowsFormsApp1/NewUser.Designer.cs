@@ -89,6 +89,7 @@
             this.Controls.Add(this.userBox);
             this.Name = "NewUser";
             this.Text = "NewUser";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NewUser_FormClosing);
             this.Load += new System.EventHandler(this.NewUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -152,15 +152,26 @@ namespace WindowsFormsApp1
 
         public string whatIfModifier(string texts){
 
-            return controller.whatIfChecker(texts); //check what if and run
+            if ((controller != null) && (texts != null))
+            {
+                return controller.whatIfChecker(texts); //check what if and run
+            }
+
+            else
+            {
+                MessageBox.Show("No input or no connection has established.");
+                return string.Empty;
+            }
         }
 
 
 
         public void disconnector(){
-            
-            connectionManager.disconnector(sess); //disconnect the session
-            statusLabel = "Disconnected";
+
+            if (connectionManager != null){
+                connectionManager.disconnector(sess); //disconnect the session
+                statusLabel = "Disconnected";
+            }
             
         }
 
