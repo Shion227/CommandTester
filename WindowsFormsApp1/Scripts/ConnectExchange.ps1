@@ -1,6 +1,6 @@
 ﻿param([string]$UserName, [string]$Password)
 
-
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force -Scope CurrentUser
 
 $SecurePass = ConvertTo-SecureString -String $Password -AsPlainText -Force
 $Credential = New-Object System.Management.Automation.PSCredential($UserName,$SecurePass)
