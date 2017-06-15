@@ -28,9 +28,8 @@
         /// </summary>
         public void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.inputBox = new System.Windows.Forms.TextBox();
             this.runButton = new System.Windows.Forms.Button();
             this.copyPasteBox = new System.Windows.Forms.TextBox();
@@ -52,7 +51,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.resultTab.SuspendLayout();
             this.summaryTab.SuspendLayout();
             this.detailTab.SuspendLayout();
@@ -176,20 +174,19 @@
             this.parameterChangerGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.parameterChangerGrid.Size = new System.Drawing.Size(403, 137);
             this.parameterChangerGrid.TabIndex = 35;
-            this.toolTip1.SetToolTip(this.parameterChangerGrid, "Do not type in any command name.\r\n");
             // 
             // from
             // 
-            dataGridViewCellStyle23.NullValue = "   ";
-            this.from.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle1.NullValue = "   ";
+            this.from.DefaultCellStyle = dataGridViewCellStyle1;
             this.from.HeaderText = "From (Placeholder name)";
             this.from.Name = "from";
             this.from.Width = 180;
             // 
             // to
             // 
-            dataGridViewCellStyle24.NullValue = "   ";
-            this.to.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle2.NullValue = "   ";
+            this.to.DefaultCellStyle = dataGridViewCellStyle2;
             this.to.HeaderText = "To (Variable Value)";
             this.to.Name = "to";
             this.to.Width = 180;
@@ -252,7 +249,6 @@
             this.label4.Size = new System.Drawing.Size(94, 13);
             this.label4.TabIndex = 41;
             this.label4.Text = "プレイスホルダー を";
-            this.toolTip1.SetToolTip(this.label4, "Do not type in any command name.\r\n");
             // 
             // button1
             // 
@@ -272,13 +268,6 @@
             this.label5.Size = new System.Drawing.Size(107, 13);
             this.label5.TabIndex = 43;
             this.label5.Text = "変数　に書き換える　";
-            this.toolTip1.SetToolTip(this.label5, "Do not type in the name/part of the Command.");
-            // 
-            // toolTip1
-            // 
-            this.toolTip1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.toolTip1.OwnerDraw = true;
-            this.toolTip1.ShowAlways = true;
             // 
             // ProjectGUI
             // 
@@ -341,6 +330,5 @@
         public System.Windows.Forms.TextBox detailBox;
         public System.Windows.Forms.TextBox summaryBox;
         public System.Windows.Forms.Label defaultUserLabel;
-        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

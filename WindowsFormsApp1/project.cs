@@ -7,7 +7,11 @@ using System.Linq;
 namespace WindowsFormsApp1
 {
 
-
+    /**
+     * Created by Shion Kubota on 6/16/2017
+     * 
+     * Class that deals with GUI part of the main project
+     */
     public partial class ProjectGUI : Form{
         
         private string texts; //the input command line
@@ -25,12 +29,6 @@ namespace WindowsFormsApp1
 
 
         private void project_Load(object sender, EventArgs e){
-            ToolTip toolTip = new ToolTip();
-            toolTip.AutoPopDelay = 5000;
-            toolTip.InitialDelay = 1000;
-            toolTip.ReshowDelay = 500;
-            toolTip.ShowAlways = true;
-            toolTip.SetToolTip(this.parameterChangerGrid, "Type in placeholder name along with < and >. \n Do not type in any command name.");
             
         }
 
