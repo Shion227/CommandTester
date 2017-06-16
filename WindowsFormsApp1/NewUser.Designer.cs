@@ -46,6 +46,7 @@
             // 
             this.passBox.Location = new System.Drawing.Point(57, 151);
             this.passBox.Name = "passBox";
+            this.passBox.PasswordChar = '*';
             this.passBox.Size = new System.Drawing.Size(207, 20);
             this.passBox.TabIndex = 1;
             // 
@@ -79,6 +80,7 @@
             // 
             // NewUser
             // 
+            this.AcceptButton = this.registerButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(315, 261);
