@@ -28,8 +28,8 @@
         /// </summary>
         public void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.inputBox = new System.Windows.Forms.TextBox();
             this.runButton = new System.Windows.Forms.Button();
             this.copyPasteBox = new System.Windows.Forms.TextBox();
@@ -147,6 +147,7 @@
             this.detailBox.Location = new System.Drawing.Point(0, 0);
             this.detailBox.Multiline = true;
             this.detailBox.Name = "detailBox";
+            this.detailBox.ReadOnly = true;
             this.detailBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.detailBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.detailBox.Size = new System.Drawing.Size(685, 122);
@@ -177,16 +178,16 @@
             // 
             // from
             // 
-            dataGridViewCellStyle1.NullValue = "   ";
-            this.from.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.NullValue = "   ";
+            this.from.DefaultCellStyle = dataGridViewCellStyle5;
             this.from.HeaderText = "From (Placeholder name)";
             this.from.Name = "from";
             this.from.Width = 180;
             // 
             // to
             // 
-            dataGridViewCellStyle2.NullValue = "   ";
-            this.to.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.NullValue = "   ";
+            this.to.DefaultCellStyle = dataGridViewCellStyle6;
             this.to.HeaderText = "To (Variable Value)";
             this.to.Name = "to";
             this.to.Width = 180;
@@ -327,8 +328,8 @@
 
         public System.Windows.Forms.Label statusLabel;
         public System.Windows.Forms.DataGridView parameterChangerGrid;
-        public System.Windows.Forms.TextBox detailBox;
-        public System.Windows.Forms.TextBox summaryBox;
         public System.Windows.Forms.Label defaultUserLabel;
+        private System.Windows.Forms.TextBox detailBox;
+        private System.Windows.Forms.TextBox summaryBox;
     }
 }

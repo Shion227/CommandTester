@@ -69,6 +69,8 @@ namespace WindowsFormsApp1
             string[] def = Properties.Settings.Default.defaultCredential.Split(':');
             string defaultUser = def[0];
             defaultUserLabel.Text = defaultUser;//get the default user and show it on the label
+
+            userSelection.SelectedIndex = 0;
         }
 
 
@@ -133,8 +135,5 @@ namespace WindowsFormsApp1
             editor.Show();
             
         }
-
-        
-        
     }
 }

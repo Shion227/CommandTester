@@ -155,7 +155,7 @@ namespace WindowsFormsApp1
                         
                         string source = (string)((ErrorRecord)i).TargetObject; //get the source of the error
                         
-                        errormsg = "from command named '" + source + "' error below found";
+                        //errormsg = "from command named '" + source + "' error below found";
                         summary = summary + source;//add the error source to the output msg
                         
                         string tempSt = i.ToString(); //change the error msg into string
